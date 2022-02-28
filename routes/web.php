@@ -2,17 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\CalculadoraController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('calculadora', [CalculadoraController::class, 'index'])->name('calculadora.index.get');
+Route::post('calculadora', [CalculadoraController::class, 'index'])->name('calculadora.index.post');
+
+Route::get('calculadora/soma', [CalculadoraController::class, 'soma'])->name('calculadora.soma.get');
+Route::post('calculadora/soma', [CalculadoraController::class, 'soma'])->name('calculadora.soma.post');

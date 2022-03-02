@@ -4,8 +4,15 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CalculadoraController;
 
-Route::get('calculadora', [CalculadoraController::class, 'index'])->name('calculadora.index.get');
-Route::post('calculadora', [CalculadoraController::class, 'index'])->name('calculadora.index.post');
+Route::get('/', [CalculadoraController::class, 'index']);
 
-Route::get('calculadora/soma', [CalculadoraController::class, 'soma'])->name('calculadora.soma.get');
-Route::post('calculadora/soma', [CalculadoraController::class, 'soma'])->name('calculadora.soma.post');
+
+Route::get('calculadora', [CalculadoraController::class, 'index']);
+Route::post('calculadora', [CalculadoraController::class, 'index']);
+
+Route::get('calculadora/soma', [CalculadoraController::class, 'soma']);
+Route::post('calculadora/soma', [CalculadoraController::class, 'soma']);
+
+
+Route::get('calculadora/subtracao', [CalculadoraController::class, 'subtracao']);
+Route::post('calculadora/subtracao', [CalculadoraController::class, 'subtracao']);

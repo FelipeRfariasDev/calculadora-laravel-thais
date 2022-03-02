@@ -19,6 +19,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/calculadora/soma">Soma</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/calculadora/subtracao">Subtração</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

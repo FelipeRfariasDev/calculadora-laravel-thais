@@ -2,7 +2,7 @@
 @section('content')
 
 <h1>Calculadora da Thaís</h1>
-<form method="post">
+<form method="post" action="calculadora">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <div class="row g-3 align-items-center">
         <div class="col-auto">
